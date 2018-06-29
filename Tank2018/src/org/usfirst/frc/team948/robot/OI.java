@@ -14,8 +14,8 @@ import edu.wpi.first.wpilibj.Joystick;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-	public static final Joystick leftJoy = new Joystick(1);
-	public static final Joystick rightJoy = new Joystick(2);
+	public static final Joystick leftJoy = new Joystick(0);
+	public static final Joystick rightJoy = new Joystick(1);
 	
 	public static double getRightJoystickY() {
 		return rightJoy.getY();

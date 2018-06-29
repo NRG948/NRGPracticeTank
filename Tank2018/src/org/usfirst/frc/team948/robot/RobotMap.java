@@ -22,7 +22,6 @@ public class RobotMap {
 	public static Victor frontRight = new Victor(0);
 	public static Victor backLeft = new Victor(3);
 	public static Victor backRight = new Victor(2);
-	public static Drive drive = new Drive();
 	
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.
