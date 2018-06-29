@@ -7,6 +7,8 @@
 
 package org.usfirst.frc.team948.robot;
 
+import org.usfirst.frc.team948.robot.subsystems.Drive;
+
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -22,7 +24,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * project.
  */
 public class Robot extends TimedRobot {
-
+	
+	public static Drive drive = new Drive();
 	Command m_autonomousCommand;
 	SendableChooser<Command> m_chooser = new SendableChooser<>();
 

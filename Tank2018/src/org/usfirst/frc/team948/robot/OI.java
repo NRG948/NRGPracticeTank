@@ -18,11 +18,11 @@ public class OI {
 	public static final Joystick rightJoy = new Joystick(2);
 	
 	public static double getRightJoystickY() {
-		return -rightJoy.getY();
+		return rightJoy.getY();
 	}
 	
 	public static double getLeftJoystickY() {
-		return -leftJoy.getY();
+		return leftJoy.getY();
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a

@@ -7,6 +7,10 @@
 
 package org.usfirst.frc.team948.robot;
 
+import org.usfirst.frc.team948.robot.subsystems.Drive;
+
+import edu.wpi.first.wpilibj.Victor;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -14,11 +18,11 @@ package org.usfirst.frc.team948.robot;
  * floating around.
  */
 public class RobotMap {
-	public static Victor frontLeft;
-	public static Victor frontRight;
-	public static Victor backLeft;
-	public static Victor backRight;
-	
+	public static Victor frontLeft = new Victor(1);
+	public static Victor frontRight = new Victor(0);
+	public static Victor backLeft = new Victor(3);
+	public static Victor backRight = new Victor(2);
+	public static Drive drive = new Drive();
 	
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.
